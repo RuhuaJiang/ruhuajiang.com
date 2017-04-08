@@ -1,0 +1,50 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <!--This blog: https://blog.r3bl.me/en/simple-social-media-links-jekyll/ -->
+        <ul class="social-media-list">
+          {% if site.github_username %}
+              <li>
+                <a href="https://github.com/{{ site.github_username }}">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+            <li>
+              <a href="https://twitter.com/{{ site.twitter_username }}">
+                <i class="fa fa-twitter"></i> Twitter
+              </a>
+            </li>
+          {% endif %}
+
+          {% if site.data.config.linkedin %}
+  
+            <li>
+                <a href="https://linkedin.com/in/{{ site.data.config.linkedin }}">
+                  <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+           </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <a class="twitter-timeline" data-height="400" href="https://twitter.com/RuhuaJiang">Tweets by RuhuaJiang</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>{{ site.data.config.description | escape }}</p>
+      </div>
+
+  </div>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+      {% include google-analytics.html %}
+  {% endif %}
+</footer>
