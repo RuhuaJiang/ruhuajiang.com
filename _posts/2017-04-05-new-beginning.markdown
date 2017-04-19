@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Site"
+title:  "New Beginning"
 date:   2017-04-05 03:28:37 -0400
 categories: jekyll update
 ---
